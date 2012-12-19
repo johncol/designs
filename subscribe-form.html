@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+	body{
+		padding:0;
+		margin:0;
+		background:#555;
+	}
+	#container{
+		margin:0 auto;
+		min-width:900px;
+		max-width:1200px;
+		padding:25px;
+		background:#FFF url(imgs/bg2.jpg) no-repeat fixed center center;
+		box-shadow:0 0 100px rgba(0,0,0,0.9);
+		min-height:800px;
+	}
+	#subscribe{
+		width:235px;
+		padding:10px 15px 20px;
+		border-radius:10px;
+		background:#CCC;
+		background:rgba(110,110,110,0.3);
+		float:right;
+	}
+	#subscribe h1{
+		font:115%/1 Tahoma, "Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-weight:normal;
+		text-transform:uppercase;
+		padding-left:25px;
+		background:url(imgs/rss-128.png) no-repeat 0 0;
+		background-size:20px;
+	}
+	#subscribe form{
+		font:small/1 Tahoma, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	#subscribe form label{
+		display:block;
+		font-weight:bold;
+		line-height:1.64;
+		color:#666;
+		color:rgba(0,0,0,0.6);
+	}
+	#subscribe h1,
+	#subscribe form label{
+		text-shadow:0 1px 1px #FFF;
+	}
+	#subscribe form input{
+		display:block;
+		font-family:inherit;
+		margin:0 0 10px 0;
+	}
+	#subscribe form input:last-child{
+		margin:0;
+	}
+	#subscribe form input[type="text"],
+	#subscribe form input[type="email"]{
+		width:215px;
+		padding:5px 8px;
+		color:#666;
+		border:none;
+		border-radius:4px;
+		background: #FFF; /* Old browsers */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(12%,#ffffff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #999999 0%,#ffffff 12%); /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(top,  #999999 0%, #ffffff 12%); /* FF3.6+ */
+		background: -o-linear-gradient(top,  #999999 0%,#ffffff 12%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #999999 0%,#ffffff 12%); /* IE10+ */
+		background: linear-gradient(top,  #999999 0%,#ffffff 12%); /* W3C */
+	}
+	#subscribe form input[type="text"]:focus,
+	#subscribe form input[type="email"]:focus{
+		-webkit-animation:pulse 1.5s infinite ease-in-out;
+		-moz-animation:pulse 1.5s infinite ease-in-out;
+		-o-animation:pulse 1.5s infinite ease-in-out;
+		animation:pulse 1.5s infinite ease-in-out;
+	}
+	#subscribe form input[type="submit"]{
+		padding:8px 15px;
+		font-family:Helvetica,Arial,sans-serif;
+		font-weight:bold;
+		font-size:90%;
+		color:#444;
+		text-shadow:0 1px 1px rgba(255,255,255,0.85);
+		border:none;
+		border-radius:23px;
+		background: #ffffff; /* Old browsers */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bbbbbb)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%); /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #bbbbbb 100%); /* FF3.6+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%); /* IE10+ */
+		background: linear-gradient(top,  #ffffff 0%,#bbbbbb 100%); /* W3C */
+		box-shadow:0 1px 2px rgba(0,0,0,0.5);
+	}
+	#subscribe form input[type="submit"]:hover{
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #aaaaaa 100%); /* FF3.6+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#aaaaaa 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#aaaaaa 100%); /* IE10+ */
+		background: linear-gradient(top,  #ffffff 0%,#aaaaaa 100%); /* W3C */
+		box-shadow:0 1px 2px rgba(0,0,0,0.6);
+	}
+	/* ------- animation keyframes ------ */
+	@-webkit-keyframes pulse{
+		0%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+		50%{
+			box-shadow:0 0 12px rgba(0,0,0,0.9);
+		}
+		100%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+	}
+	@-moz-keyframes pulse{
+		0%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+		50%{
+			box-shadow:0 0 12px rgba(0,0,0,0.9);
+		}
+		100%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+	}
+	@-o-keyframes pulse{
+		0%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+		50%{
+			box-shadow:0 0 12px rgba(0,0,0,0.9);
+		}
+		100%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+	}
+	@keyframes pulse{
+		0%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+		50%{
+			box-shadow:0 0 12px rgba(0,0,0,0.9);
+		}
+		100%{
+			box-shadow:0 0 12px rgba(0,0,0,0.2);
+		}
+	}
+</style>
+</head>
+<body>
+<div id="container">
+    <section id="subscribe">
+        <h1>New Things Alerts</h1>
+        <form>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required />
+            <input type="submit" value="Subscribe" />
+        </form>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Beautiful Tables</title>
+<style type="text/css">
+body{
+	background:#FBEDE0;
+}
+table{
+	margin:20px auto;
+	font-size:small;
+	font-family:Verdana,"Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse:collapse;
+	border-radius:10px;
+	background:#333;
+	box-shadow:1px 1px 5px rgba(50,50,50,0.7);
+}
+table thead th{
+	color:#EEE;
+	font-weight:bold;
+	font-size:220%;
+	padding:24px 25px 15px;
+	background: #3e3c3f; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e3c3f), color-stop(76%,#252525), color-stop(100%,#1c1c1c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3e3c3f 0%,#252525 76%,#1c1c1c 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(top,  #3e3c3f 0%, #252525 76%, #1c1c1c 100%); /* FF3.6+ */
+	background: -o-linear-gradient(top,  #3e3c3f 0%,#252525 76%,#1c1c1c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3e3c3f 0%,#252525 76%,#1c1c1c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3e3c3f 0%,#252525 76%,#1c1c1c 100%); /* W3C */
+}
+table thead th:first-of-type{
+	border-radius:10px 0 0 0;
+}
+table thead th:last-of-type{
+	border-radius:0 10px 0 0;
+}
+table tbody tr{
+	box-shadow:0 -1px 3px #222 inset;
+}
+table tbody tr:last-of-type{
+	box-shadow:none;
+}
+table tbody tr td{
+	color:#D3D3D3;
+	padding:13px 0 14px;
+}
+table tbody tr:last-of-type td{
+	padding:15px 0 18px;
+}
+table tr th,
+table tr td{
+	text-align:center;
+}
+table tr td a{
+	text-decoration:none;
+	color:rgba(255,255,255,0.75);
+	padding:3px 10px;
+	border:1px solid rgba(180,180,180,0.5);
+	border-radius:2px;
+	-moz-transition:all 1s ease;
+}
+table tr:last-of-type td:nth-child(2) a{
+	background:#3DB3D1;
+	box-shadow:0 0 3px #3DB3D1;
+}
+table tr:last-of-type td:nth-child(3) a{
+	background:#B03B2A;
+	box-shadow:0 0 3px #B03B2A;
+}
+table tr:last-of-type td:nth-child(4) a{
+	background:#2E831E;
+	box-shadow:0 0 3px #2E831E;
+}
+table tr td a:hover{
+	color:#FFF;
+	box-shadow:none !important;
+	border-color:rgba(210,210,210,0.6);
+}
+</style>
+</head>
+<body>
+<table>
+	<thead>
+        <tr>
+            <th scope="col">Planes</th>
+            <th scope="col">Basic</th>
+            <th scope="col">Medium</th>
+            <th scope="col">Premium</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lorem</td>
+            <td>Element</td>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+        <tr>
+            <td>Lorem</td>
+            <td>Element</td>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+        <tr>
+            <td>Lorem</td>
+            <td>Element</td>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#">Buy</a></td>
+            <td><a href="#">Buy</a></td>
+            <td><a href="#">Buy</a></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

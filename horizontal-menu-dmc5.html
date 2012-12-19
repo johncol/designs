@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DMC5 Horizontal Menu</title>
+<style type="text/css">
+
+#header{
+	
+}
+
+#main-menu{
+	clear:both;
+	float:left;
+	width:100%;
+	z-index:10;
+}
+
+#content{
+	clear:both;
+	z-index:1;
+}
+
+/*--------------------------------------------*/
+
+body{
+	margin:0;
+	padding:0;
+	font:small Tahoma, Geneva, sans-serif;
+}
+
+.clear{
+	clear:both;
+}
+
+/*--------------------------------------------*/
+
+#header{
+	background:#222;
+	border-top:10px solid #111;
+	margin:0;
+	padding:20px 0 1px;
+}
+
+#header:hover{
+	background:#FFF;
+}
+
+#header a{
+	text-decoration:none;
+	color:#DDD;
+}
+
+#header h1{
+	text-align:center;
+	font-weight:normal;
+	font-size:300%;
+	padding:0;
+	margin:0;
+	text-indent:-999999px;
+}
+
+#header h1 a{
+	background:url(imgs/dmc_white.png) center center no-repeat;
+	background-size:330.6px 193.2px;
+	display:block;
+	width:358.15px;
+	height:209.3px;
+	margin:0 auto;
+}
+
+#header:hover h1 a{
+	background:url(imgs/dmc.png) center center no-repeat;
+	background-size:348.6px 207.6px;
+}
+
+#header, #header h1 a{
+	-webkit-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	transition:all 2s ease;
+}
+
+/*--------------------------------------------*/
+
+#main-menu{
+	background: #1a1a1a; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a1a1a), color-stop(100%,#101010)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* IE10+ */
+	background: -moz-linear-gradient(top, #1a1a1a 0%, #101010 100%); /* FF3.6+ */
+	background: linear-gradient(top, #1a1a1a 0%,#101010 100%); /* W3C */
+}
+
+#main-menu>ul{
+	width:900px;
+	height:70px;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+}
+
+#main-menu>ul li{
+	float:left;
+	width:150px;
+	text-align:center;
+	text-transform:lowercase;
+	position:relative;
+	background: #1a1a1a; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a1a1a), color-stop(100%,#101010)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1a1a1a 0%,#101010 100%); /* IE10+ */
+	background: -moz-linear-gradient(top, #1a1a1a 0%, #101010 100%); /* FF3.6+ */
+	background: linear-gradient(top, #1a1a1a 0%,#101010 100%); /* W3C */
+}
+
+#main-menu>ul li a{
+	display:block;
+	text-decoration:none;
+	font:bold 130%/70px "Bradley Hand ITC", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#AAA;
+	-webkit-transition:color 1s ease;
+	-o-transition:color 1s ease;
+	-ms-transition:color 1s ease;
+	-moz-transition:color 1s ease;
+	transition:color 1s ease;
+}
+
+#main-menu>ul li a:not(:last-child){
+	background:url(imgs/down-row.png) no-repeat 50% 78%;
+}
+
+#main-menu>ul li a:hover{
+	background:rgb(156,0,0);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(156,0,0)), color-stop(1001%,rgb(116,0,0)));
+	background:-webkit-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:-o-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:-ms-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:-moz-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	color:#FFF;
+}
+
+#main-menu>ul li a:not(:last-child):hover{
+	background:url(imgs/down-row.png) no-repeat 50% 81%,rgb(156,0,0);
+	background:url(imgs/down-row.png) no-repeat 50% 81%,-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(156,0,0)), color-stop(1001%,rgb(116,0,0)));
+	background:url(imgs/down-row.png) no-repeat 50% 81%,-webkit-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:url(imgs/down-row.png) no-repeat 50% 81%,-o-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:url(imgs/down-row.png) no-repeat 50% 81%,-ms-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:url(imgs/down-row.png) no-repeat 50% 81%,-moz-linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+	background:url(imgs/down-row.png) no-repeat 50% 81%,linear-gradient(top, rgb(156,0,0) 0%, rgb(116,0,0) 100%);
+}
+
+#main-menu>ul li ul{
+	display:none;
+	position:absolute;
+	list-style:none;
+}
+
+#main-menu>ul li:hover ul{
+	display:block;
+	padding:0;
+}
+
+#main-menu>ul li ul li{
+	font-size:small;
+	text-align:left;
+}
+
+#main-menu>ul li ul li a{
+	line-height:32px;
+	font-size:95%;
+	color:#999;
+	text-transform:capitalize;
+	padding:0 3px;
+}
+
+/*--------------------------------------------*/
+
+#content{
+	min-width:1024px;
+	min-height:900px;
+	background:url(),#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* IF */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(16,16,16,1)), color-stop(100px,rgba(0,0,0,0))) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, rgba(16,16,16,1) 0%, rgba(0,0,0,0) 100px) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, rgba(16,16,16,1) 0%, rgba(0,0,0,0) 100px) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top lef fixedt; /* Opera 11.10+ */
+	background:-ms-linear-gradient(top, rgba(16,16,16,1) 0%, rgba(0,0,0,0) 100px) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* IE10+ */
+	background:-moz-linear-gradient(top, rgba(16,16,16,1) 0%, rgba(0,0,0,0) 100px) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* FF3.6+ */
+	background:linear-gradient(top, rgba(16,16,16,1) 0%, rgba(0,0,0,0) 100px) no-repeat,#101010 url(imgs/devil_may_cry_5_bg.jpg) no-repeat top left fixed; /* W3C */
+	background-size:100% 100px,100%;
+}
+
+/*--------------------------------------------*/
+
+#main{
+	width:900px;
+	margin:0 auto;
+	padding:60px 0 450px;
+}
+
+#main .video{
+	border:6px solid #1a1a1a;
+	border-radius:15px;
+	padding:30px;
+	margin:15px 0;
+	background:rgba(200,200,200,0.3);
+	background:rgba(0,0,0,0.5);
+}
+
+#main .video h1{
+	margin:10px 0 15px;
+	font:400%/1 "Bradley Hand ITC", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-shadow:3px 3px 3px #111;
+	text-align:right;
+	color:#999;
+}
+
+#main .video .youtube-player{
+	display:block;
+	margin:0 auto;
+}
+
+</style>
+</head>
+<body>
+<div id="header">
+	<h1><a href="#">DMC</a></h1>
+</div>
+<div id="main-menu">
+	<ul>
+    	<li><a href="#">Home</a></li>
+    	<li><a href="#">Story</a></li>
+    	<li>
+        	<a href="#">Characters</a>
+        	<ul>
+            	<li><a href="#">Dante</a></li>
+            	<li><a href="#">Virgil</a></li>
+            	<li><a href="#">Lady</a></li>
+            	<li><a href="#">Trish</a></li>
+            	<li><a href="#">Nero</a></li>
+            </ul>
+        </li>
+    	<li>
+        	<a href="#">Other DMC games</a>
+        	<ul>
+            	<li><a href="#">DMC</a></li>
+            	<li><a href="#">DMC2</a></li>
+            	<li><a href="#">DMC Dante's Awakening</a></li>
+            	<li><a href="#">DMC4</a></li>
+          	</ul>
+        </li>
+    	<li><a href="#">About us</a></li>
+    	<li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div id="content">
+	<div id="main">
+    	<div class="video">
+        	<h1>Official Trailer</h1>
+    		<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/v_eeqNWSjzc" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>

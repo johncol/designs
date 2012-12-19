@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login example</title>
+    <link rel="stylesheet" href="css/reset-2011.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/login-2.css" />
+</head>
+<body>
+<div id="login-container">
+    <header>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">configuration</a></li>
+        </ul>
+        <h1>login to your account</h1>
+    </header>
+    <form>
+        <ul>
+            <li>
+                <input type="email" id="email" placeholder="email" />
+            </li>
+            <li>
+                <input type="password" id="password" placeholder="password" />
+            </li>
+            <li>
+                <input type="checkbox" id="remember" />
+                <label for="remember">remember me</label>
+                <span class="buttons">
+                    <input type="button" id="cancel-button" value="cancel" />
+                    <input type="submit" id="login-button" value="login" />
+                </span>
+            </li>
+        </ul>
+    </form>
+    <section>
+        <h1>forgot your password?</h1>
+        <p>no worries, <a href="#">click here</a> to get a new password</p>
+    </section>
+</div>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/login-2.js"></script>
+</body>
+</html>

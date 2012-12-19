@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Image gallery with CSS3</title>
+<style type="text/css">
+	body{
+		background:#EEE;
+		margin:0;
+		padding:0;
+	}
+	#container{
+		width:980px;
+		margin:0 auto;
+		padding:10px 0;
+	}
+	#container #image-gallery{
+		margin:15px auto;
+		padding:0;
+		width:980px;
+		list-style:none;
+	}
+	#container #image-gallery li{
+		margin:10px 0 10px 25px;
+		padding:0;
+		float:left;
+	}
+	#container #image-gallery li:nth-child(4n+1){
+		margin-left:0;
+	}
+	#container #image-gallery li a {
+		z-index:1;
+		text-decoration:none;
+		display:block;
+		width:192px;
+		height:120px;
+		padding:10px;
+		margin:0;
+		background:#FAFAFA;
+		border:1px solid #CCC;
+		-moz-transition:all 0.5s ease;
+		-webkit-transition:all 0.5s ease;
+		-o-transition:all 0.5s ease;
+		transition:all 0.5s ease;
+	}
+	#container #image-gallery li a img{
+		width:192px;
+		height:120px;
+		border:none;
+	}
+	#container #image-gallery li a:hover{
+		z-index:2;
+		border-color:#FFF;
+		box-shadow:4px 4px 10px rgba(48,48,48,0.6);
+		-moz-transform:scale(1.5) rotate(-8deg) translateX(10px) translateY(30px);
+		-webkit-transform:scale(1.5) rotate(-8deg) translateX(10px) translateY(30px);
+		-o-transform:scale(1.5) rotate(-8deg) translateX(10px) translateY(30px);
+		transform:scale(1.5) rotate(-8deg) translateX(10px) translateY(30px);
+	}
+</style>
+</head>
+<body>
+  <div id="container">
+    	<ul id="image-gallery">
+        	<li><a href="#"><img src="imgs/image01.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image02.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image03.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image04.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image05.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image06.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image07.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image08.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image09.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image10.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image11.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image12.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image13.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image14.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image15.jpg" alt="" /></a></li>
+        	<li><a href="#"><img src="imgs/image01.jpg" alt="" /></a></li>
+        </ul>
+    </div>
+</body>
+</html>
